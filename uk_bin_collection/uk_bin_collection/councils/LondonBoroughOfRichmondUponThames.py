@@ -96,3 +96,7 @@ class CouncilClass(AbstractGetBinDataClass):
             )
         )
         cookie_banner.send_keys(Keys.ENTER)
+
+
+CouncilClass().parse_data("", url="https://www.richmond.gov.uk/services/waste_and_recycling/collection_days/",
+                          paon="March Road", headless=True)
